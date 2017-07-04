@@ -1,45 +1,81 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Layout Challenge</title>
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-		
-			#container {
-				width:450px;
-				background-color:#AA4639;
-				height: 125px;
-				margin-right:auto;
-				margin-left:auto;
-				font:0;
-			}
+<head>
+	<meta charset="utf-8" />
+	<title>Layout Challenge</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+/*		Standard for all 3 containers*/
+		.container {
+			width:450px;
+			background-color:#AA4639;
+			height: 125px;
+			margin-right:auto;
+			margin-left:auto;
+			font:0;
+			margin-top:5px;
+			margin-bottom: 5px;
+		}
+/*Box a styling*/
+		.boxa{
+			float:left;
+			padding: 0;
+			width: 150px;
+			height: 100%;
+			background-color: #81BBC9;
+			font:16px;
+		}
+		h1{
+			margin: 0;
+			font-family: Roboto;
+			text-align:left;
+		}
 
-			.boxc{
-				float:right;
-				padding: 0;
-				width: 150px;
-				height: 100%;
-				background-color: #81BBC9;
-				display: inline-block;
-				font:16px;
-			}
+/*Box b styling*/
+		.boxb{
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			width: 150px;
+			height: 100%;
+			background-color: #81BBC9;
+			font:16px;
+		}
 
-			h1{
-				margin: 0;
-				font-family: Roboto;
-				text-align:right;
-  			}
-  			span{
-  				color: white;
-  				float:right;
-  			}
+		div.boxb>h1{
+			text-align: center;
+		}
 
-		</style>
-	</head>
-	<body>
-		<div id="container">
-			<div class="boxc"><h1>Hola</h1><span>Hola2</span></div>
-		</div>
-	</body>
+/*Box c styling*/
+		.boxc{
+			float:right;
+			padding: 0;
+			width: 150px;
+			height: 100%;
+			background-color: #81BBC9;
+			font:16px;
+		}
+
+		div.boxc>h1{
+			text-align: right;
+		}
+
+		span{
+			color: white;
+			float:right;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="boxa"><h1>HOLA</h1></div>
+	</div>
+	<div class="container">
+		<div class="boxb"><h1>HOLA</h1></div>
+	</div>
+	<div class="container">
+		<div class="boxc"><h1>HOLA</h1><span>Hola2</span></div>
+	</div>
+</body>
 </html>
